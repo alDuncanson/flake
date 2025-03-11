@@ -21,10 +21,6 @@
       EDITOR = "nvim";
     };
 
-    file = {
-      ".config/ghostty/config".source = ./configs/ghostty/config;
-    };
-
     shell = {
       enableZshIntegration = true;
     };
@@ -38,6 +34,16 @@
       enable = true;
       config = {
         theme = "Catppuccin Macchiato";
+      };
+    };
+    ghostty = {
+      enable = true;
+      settings = {
+        theme = "catppuccin-macchiato";
+        font-family = "MonoLisa Custom";
+        macos-titlebar-style = "hidden";
+        background-opacity = 0.9;
+        background-blur = true;
       };
     };
     direnv = {
